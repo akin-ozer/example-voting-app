@@ -14,7 +14,8 @@ jobs:
       - uses: actions/setup-python@v5
         name: pip
         with:
-          python-version: '3.11' 
+          python-version: '3.11'
+      - run: pip install -r vote/requirements.txt
       
       -
         name: Set up QEMU
